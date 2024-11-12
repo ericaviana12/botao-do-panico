@@ -4,12 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alerta Sonoro com LED</title>
+    <style>
+        /* Estilos para a mensagem de alerta */
+        #alertMessage {
+            display: none;
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px 20px;
+            background-color: red;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+    </style>
 </head>
 <body>
     <h1>Botão do pânico</h1>
+    <!-- Mensagem de alerta -->
+    <div id="alertMessage">⚠️ Alerta ativado! ⚠️</div>
+    
     <div class="container">
         <button id="alertButton">Pressione e mantenha pressionado</button>
     </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
