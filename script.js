@@ -1,6 +1,11 @@
+/**
+ * Desenvolvimento de um app de botão do pânico
+ * @author Erica Viana
+ */
+
 const alertButton = document.getElementById('alertButton') // Seleciona o botão de alerta (imagem) pelo ID e armazena na constante alertButton // 
 const alertMessage = document.getElementById('alertMessage') // Seleciona a mensagem de alerta pelo ID e armazena na constante alertMessage //
-const sound = new Audio("sound/alarm.mp3") // Cria um novo objeto de áudio, com o caminho para o arquivo de som, para ser usado como alerta sonoro //
+const sound = new Audio("sound/alarme.mp3") // Cria um novo objeto de áudio, com o caminho para o arquivo de som, para ser usado como alerta sonoro //
 
 function toggleAlert(isActive) { // Declara uma função chamada toggleAlert que recebe um parâmetro isActive para ativar/desativar o alerta //
     alertMessage.style.display = isActive ? 'block' : 'none' // Define a exibição da mensagem de alerta como "block" se isActive for true e "none" caso contrário //
