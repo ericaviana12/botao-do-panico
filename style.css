@@ -1,0 +1,18 @@
+#alertButton { /* Estilização para o botão de alerta, representado pela imagem //*/
+    cursor: pointer; /* Define o cursor como uma mãozinha ao passar sobre a imagem para indicar interatividade //*/
+}
+
+#alertMessage { /* Estilização para a mensagem de alerta //*/
+    display: none; /* Define a mensagem inicialmente oculta //*/
+    position: fixed; /* Posiciona a mensagem fixa na tela //*/
+    top: 20px; /* Define a posição no topo com 20px de margem //*/
+    left: 50%; /* Centraliza horizontalmente //*/
+    transform: translateX(-50%); /* Ajusta a posição horizontal para exatamente o centro da tela //*/
+    padding: 10px 20px; /* Adiciona preenchimento interno de 10px vertical e 20px horizontal para tornar a mensagem maior //*/
+    background-color: red; /* Define a cor de fundo da mensagem como vermelho //*/
+    color: white; /* Define a cor do texto como branco //*/
+    font-weight: bold; /* Deixa o texto em negrito //*/
+    border-radius: 5px; /* Adiciona bordas arredondadas de 5px //*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Aplica uma sombra para destacar a mensagem //*/
+    z-index: 1000; /* Garante que a mensagem fique acima de outros elementos na página //*/
+}
