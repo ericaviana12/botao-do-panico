@@ -4,27 +4,28 @@
     <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8, para suportar caracteres especiais -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Define que a largura do conteúdo deve seguir a largura da tela para ser responsivo -->
     <title>Alerta Sonoro com LED</title> <!-- Define o título da página que aparece na aba do navegador -->
-    <style> <!-- Início da seção de estilos CSS para aplicar personalizações visuais na página -->
+    <style>
         /* Estilização para garantir que a imagem se pareça com um botão */
-        #alertButton { /* Seleciona o elemento com id "alertButton" para aplicar estilos */
-            cursor: pointer; /* Define o cursor como uma mãozinha ao passar sobre a imagem, indicando que é clicável */
+        /* Define o cursor como uma mãozinha ao passar sobre a imagem, indicando que é clicável */
+        #alertButton {
+            cursor: pointer;
         }
         /* Estilos para a mensagem de alerta */
-        #alertMessage { /* Seleciona o elemento com id "alertMessage" para estilização */
-            display: none; /* Oculta o elemento por padrão, até que ele seja exibido dinamicamente */
-            position: fixed; /* Define a posição do elemento como fixa na tela */
-            top: 20px; /* Posiciona o elemento a 20px do topo da tela */
-            left: 50%; /* Centraliza o elemento horizontalmente */
-            transform: translateX(-50%); /* Ajusta a posição para ficar perfeitamente centralizado no meio da tela */
-            padding: 10px 20px; /* Define espaçamento interno de 10px nas laterais e 20px no topo e na base */
-            background-color: red; /* Define a cor de fundo como vermelha para chamar a atenção */
-            color: white; /* Define a cor do texto como branca para contraste */
-            font-weight: bold; /* Define o texto como negrito */
-            border-radius: 5px; /* Arredonda levemente os cantos do alerta */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra ao redor para dar destaque ao alerta */
-            z-index: 1000; /* Garante que o alerta fique acima de outros elementos na página */
+        #alertMessage {
+            display: none;
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px 20px;
+            background-color: red;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
         }
-    </style> <!-- Fim da seção de estilos CSS -->
+    </style>
 </head> <!-- Fim do cabeçalho do documento -->
 <body> <!-- Início do corpo do documento, onde o conteúdo visível da página é colocado -->
     <h1>Botão do pânico</h1> <!-- Cabeçalho principal da página, indicando a funcionalidade do botão de emergência -->
