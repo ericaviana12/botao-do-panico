@@ -1,21 +1,20 @@
-<!DOCTYPE html> <!-- Declara o tipo de documento como HTML5 //-->
-<html lang="pt-br"> <!-- Inicia o elemento HTML com o idioma definido como português do Brasil //-->
-<head> <!-- Início do cabeçalho, que contém metadados e links para recursos externos //-->
-    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8, suportando caracteres especiais //-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Define a largura do conteúdo conforme a largura da tela para responsividade //-->
-    <title>Alerta Sonoro com LED</title> <!-- Define o título da página que aparece na aba do navegador //-->
+<!DOCTYPE html> <!-- Declara o tipo de documento como HTML5 -->
+<html lang="pt-br"> <!-- Inicia o elemento HTML, definindo o idioma do documento como português do Brasil -->
+<head> <!-- Início do cabeçalho do documento, que contém metadados e links para recursos -->
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8, para suportar caracteres especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Define que a largura do conteúdo deve seguir a largura da tela para ser responsivo -->
+    <title>Alerta Sonoro com LED</title> <!-- Define o título da página que aparece na aba do navegador -->
     <link rel="stylesheet" href="style.css"> <!-- Importa o arquivo CSS externo para estilos da página //-->
-</head> <!-- Fim do cabeçalho do documento //-->
-<body> <!-- Início do corpo, onde o conteúdo visível da página é colocado //-->
-    <h1>Botão do pânico</h1> <!-- Cabeçalho principal da página indicando a funcionalidade do botão de emergência //-->
-    <h2>Em caso de emergência, acione o botão abaixo.</h2> <!-- Subtítulo com instruções para o usuário //-->
-    <div class="container"> <!-- Div para agrupar o botão e a mensagem de alerta visual //-->
-        <img src="img/panic.jpg" alt="botão" id="alertButton" height="300px" width="300px"> <!-- Imagem representando o botão de alerta, com ID para identificação e dimensões definidas //-->
-        <div id="alertMessage">⚠️ Alerta ativado! ⚠️</div> <!-- Mensagem de alerta, inicialmente oculta, que será exibida ao ativar o botão //-->
-    </div> <!-- Fim do contêiner do botão e da mensagem de alerta //-->
-    <div id="cameraPermissionMessage"> <!-- Div que contém a mensagem de permissão para acessar a câmera //-->
-        <p>Por favor, permita o acesso à sua câmera para ativar o LED.</p> <!-- Informa ao usuário a necessidade de permitir o acesso à câmera //-->
-    </div> <!-- Fim da mensagem de permissão para câmera //-->
-    <script src="script.js"></script> <!-- Importa o arquivo JavaScript externo contendo funcionalidades da página //-->
-</body> <!-- Fim do corpo do documento //-->
-</html> <!-- Fim do documento HTML //-->
+</head> <!-- Fim do cabeçalho do documento -->
+<body> <!-- Início do corpo do documento, onde o conteúdo visível da página é colocado -->
+    <h1>Botão do pânico</h1> <!-- Cabeçalho principal da página, indicando a funcionalidade do botão de emergência -->
+    <h2>Em caso de emergência, acione o botão abaixo.</h2> <!-- Cabeçalho secundário com instruções para o usuário -->
+    <div class="container"> <!-- Div de contêiner para agrupar o botão e a mensagem de alerta -->
+        <!-- A imagem agora age como o botão -->
+        <img src="img/panic.jpg" alt="botão" id="alertButton" height="300px" width="300px"> <!-- Imagem que representa o botão de alerta, com id para identificação e atributos de altura e largura -->
+        <!-- Mensagem de alerta -->
+        <div id="alertMessage">⚠️ Alerta ativado! ⚠️</div> <!-- Div para exibir a mensagem de alerta quando o botão é pressionado, inicialmente oculta -->
+    </div> <!-- Fim do contêiner -->
+    <script src="script.js"></script> <!-- Link para o arquivo JavaScript que contém as funcionalidades da página -->
+</body> <!-- Fim do corpo do documento -->
+</html> <!-- Fim do documento HTML -->
