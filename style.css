@@ -1,5 +1,7 @@
 #alertButton { /* Estilização para o botão de alerta, representado pela imagem //*/
     cursor: pointer; /* Define o cursor como uma mãozinha ao passar sobre a imagem para indicar interatividade //*/
+    width: 80%; /* Define largura relativa para a imagem do botão //*/
+    max-width: 300px; /* Limita a largura máxima do botão em 300px //*/
 }
 
 #alertMessage { /* Estilização para a mensagem de alerta //*/
@@ -15,4 +17,27 @@
     border-radius: 5px; /* Adiciona bordas arredondadas de 5px //*/
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Aplica uma sombra para destacar a mensagem //*/
     z-index: 1000; /* Garante que a mensagem fique acima de outros elementos na página //*/
+    font-size: 16px; /* Tamanho de fonte adequado para leitura //*/
+    word-wrap: break-word; /* Garante que a mensagem seja quebrada em várias linhas, se necessário //*/
+}
+
+/* Estilização para a mensagem de permissão de câmera */
+#cameraPermissionMessage {
+    display: none; /* Inicialmente oculta //*/
+    position: fixed; /* Fica fixada na tela //*/
+    top: 50%; /* Centraliza verticalmente //*/
+    left: 50%; /* Centraliza horizontalmente //*/
+    transform: translate(-50%, -50%); /* Ajusta a posição para o centro exato da tela //*/
+    padding: 20px; /* Preenchimento interno //*/
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo semitransparente para destacar a mensagem //*/
+    color: white; /* Cor do texto como branco //*/
+    font-size: 18px; /* Tamanho de fonte adequado para visibilidade //*/
+    border-radius: 10px; /* Bordas arredondadas //*/
+    z-index: 1000; /* Garante que fique acima de outros elementos //*/
+}
+
+@media (max-width: 600px) { /* Adiciona responsividade para dispositivos menores que 600px */
+    #alertMessage {
+        font-size: 14px; /* Menor tamanho de fonte em dispositivos menores //*/
+    }
 }
